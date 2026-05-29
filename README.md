@@ -18,8 +18,8 @@ A modern and secure authentication web application built using **Node.js**, **Ex
 
 ## 🌐 Live Demo
 
-🚀 **Render Deployment:**  
-https://sessionsafex.onrender.com
+🚀 **Deployment:**  
+https://session-safe-x--adiiithyaannn.replit.app
 
 📂 **GitHub Repository:**  
 https://github.com/adiiithyaan/SessionSafeX
