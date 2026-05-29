@@ -1,0 +1,27 @@
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SessionSafeX - Verify 2FA</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="auth-container">
+    <div class="auth-card">
+      <h1>Two-Factor Authentication</h1>
+      <p class="subtitle">Enter your verification code</p>
+
+      <form action="/verify-2fa" method="POST">
+        <input
+          type="text"
+          name="token"
+          placeholder="Authenticator Code"
+          required
+        />
+
+        <button type="submit">Verify</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SessionSafeX - Dashboard</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="dashboard-container">
+    <div class="dashboard-card">
+      <h1>Dashboard</h1>
+
+      <div class="user-info">
+        <p><strong>User:</strong> <%= user.username %></p>
+        <p><strong>Email:</strong> <%= user.email %></p>
+      </div>
+
+      <div class="dashboard-actions">
+        <a href="/enable-2fa" class="btn-primary">
+          Enable 2FA
+        </a>
+
+        <a href="/logout" class="btn-danger">
+          Logout
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

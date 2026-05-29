@@ -1,0 +1,147 @@
+:root {
+  --light: #e4e4e4;
+  --silver: #a6a6a6;
+  --gray: #6f6f6f;
+  --dark-gray: #343434;
+  --black: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    var(--black),
+    var(--dark-gray),
+    var(--gray)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--light);
+}
+
+.auth-container,
+.dashboard-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.auth-card,
+.dashboard-card {
+  width: 100%;
+  max-width: 420px;
+  background: rgba(52, 52, 52, 0.85);
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  color: var(--silver);
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+input {
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: var(--gray);
+  color: white;
+  font-size: 15px;
+}
+
+input::placeholder {
+  color: var(--light);
+}
+
+input:focus {
+  outline: 2px solid var(--silver);
+}
+
+button,
+.btn-primary,
+.btn-danger {
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+button,
+.btn-primary {
+  background: var(--light);
+  color: var(--black);
+}
+
+button:hover,
+.btn-primary:hover {
+  background: white;
+}
+
+.btn-danger {
+  background: #222;
+  color: white;
+}
+
+.btn-danger:hover {
+  background: black;
+}
+
+.switch-link {
+  text-align: center;
+  margin-top: 20px;
+  color: var(--silver);
+}
+
+.switch-link a {
+  color: var(--light);
+  text-decoration: none;
+}
+
+.switch-link a:hover {
+  text-decoration: underline;
+}
+
+.user-info {
+  margin: 25px 0;
+  line-height: 2;
+}
+
+.dashboard-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+@media (max-width: 500px) {
+  .auth-card,
+  .dashboard-card {
+    padding: 25px;
+  }
+}
